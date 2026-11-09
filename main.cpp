@@ -1,8 +1,11 @@
 #include <iostream>
-
-using namespace std;
+#include <ncurses/ncurses.h>
 
 int main() {
-
-    return 0;
+   initscr();
+   printw("Hello, World!");
+   refresh();
+   getch();
+   endwin();
+   return 0;
 }
